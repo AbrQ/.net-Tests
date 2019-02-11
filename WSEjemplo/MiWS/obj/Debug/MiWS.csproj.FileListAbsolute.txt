@@ -1,0 +1,6 @@
+C:\Users\soft_asus\source\repos\WSEjemplo\MiWS\bin\MiWS.dll.config
+C:\Users\soft_asus\source\repos\WSEjemplo\MiWS\bin\MiWS.dll
+C:\Users\soft_asus\source\repos\WSEjemplo\MiWS\bin\MiWS.pdb
+C:\Users\soft_asus\source\repos\WSEjemplo\MiWS\obj\Debug\MiWS.csproj.CoreCompileInputs.cache
+C:\Users\soft_asus\source\repos\WSEjemplo\MiWS\obj\Debug\MiWS.dll
+C:\Users\soft_asus\source\repos\WSEjemplo\MiWS\obj\Debug\MiWS.pdb
