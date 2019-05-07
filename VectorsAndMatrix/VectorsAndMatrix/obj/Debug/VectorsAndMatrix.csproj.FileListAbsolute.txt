@@ -1,0 +1,5 @@
+C:\Users\Abraham\Documents\Repositorios\c#\VectorsAndMatrix\VectorsAndMatrix\bin\Debug\VectorsAndMatrix.exe.config
+C:\Users\Abraham\Documents\Repositorios\c#\VectorsAndMatrix\VectorsAndMatrix\bin\Debug\VectorsAndMatrix.exe
+C:\Users\Abraham\Documents\Repositorios\c#\VectorsAndMatrix\VectorsAndMatrix\bin\Debug\VectorsAndMatrix.pdb
+C:\Users\Abraham\Documents\Repositorios\c#\VectorsAndMatrix\VectorsAndMatrix\obj\Debug\VectorsAndMatrix.exe
+C:\Users\Abraham\Documents\Repositorios\c#\VectorsAndMatrix\VectorsAndMatrix\obj\Debug\VectorsAndMatrix.pdb
