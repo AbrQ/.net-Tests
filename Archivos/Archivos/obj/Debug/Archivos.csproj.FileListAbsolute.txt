@@ -1,0 +1,6 @@
+C:\Users\Abraham\Documents\Repositorios\PuntoNet\.net-Tests\Archivos\Archivos\bin\Debug\Archivos.exe.config
+C:\Users\Abraham\Documents\Repositorios\PuntoNet\.net-Tests\Archivos\Archivos\bin\Debug\Archivos.exe
+C:\Users\Abraham\Documents\Repositorios\PuntoNet\.net-Tests\Archivos\Archivos\bin\Debug\Archivos.pdb
+C:\Users\Abraham\Documents\Repositorios\PuntoNet\.net-Tests\Archivos\Archivos\obj\Debug\Archivos.csprojResolveAssemblyReference.cache
+C:\Users\Abraham\Documents\Repositorios\PuntoNet\.net-Tests\Archivos\Archivos\obj\Debug\Archivos.exe
+C:\Users\Abraham\Documents\Repositorios\PuntoNet\.net-Tests\Archivos\Archivos\obj\Debug\Archivos.pdb
