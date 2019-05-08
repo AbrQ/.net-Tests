@@ -1,0 +1,6 @@
+C:\Users\soft_asus\Documents\.Net Git\.net-Tests\Herencia\Herencia\bin\Debug\Herencia.exe.config
+C:\Users\soft_asus\Documents\.Net Git\.net-Tests\Herencia\Herencia\bin\Debug\Herencia.exe
+C:\Users\soft_asus\Documents\.Net Git\.net-Tests\Herencia\Herencia\bin\Debug\Herencia.pdb
+C:\Users\soft_asus\Documents\.Net Git\.net-Tests\Herencia\Herencia\obj\Debug\Herencia.csprojResolveAssemblyReference.cache
+C:\Users\soft_asus\Documents\.Net Git\.net-Tests\Herencia\Herencia\obj\Debug\Herencia.exe
+C:\Users\soft_asus\Documents\.Net Git\.net-Tests\Herencia\Herencia\obj\Debug\Herencia.pdb
