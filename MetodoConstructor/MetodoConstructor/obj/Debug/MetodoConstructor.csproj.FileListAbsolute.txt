@@ -1,0 +1,5 @@
+C:\Users\soft_asus\Documents\Repositorios\puntoNet\MetodoConstructor\MetodoConstructor\bin\Debug\MetodoConstructor.exe.config
+C:\Users\soft_asus\Documents\Repositorios\puntoNet\MetodoConstructor\MetodoConstructor\bin\Debug\MetodoConstructor.exe
+C:\Users\soft_asus\Documents\Repositorios\puntoNet\MetodoConstructor\MetodoConstructor\bin\Debug\MetodoConstructor.pdb
+C:\Users\soft_asus\Documents\Repositorios\puntoNet\MetodoConstructor\MetodoConstructor\obj\Debug\MetodoConstructor.exe
+C:\Users\soft_asus\Documents\Repositorios\puntoNet\MetodoConstructor\MetodoConstructor\obj\Debug\MetodoConstructor.pdb

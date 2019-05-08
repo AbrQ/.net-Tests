@@ -1,0 +1,6 @@
+C:\Users\soft_asus\Documents\Repositorios\puntoNet\Consola\Consola\bin\Debug\Consola.exe.config
+C:\Users\soft_asus\Documents\Repositorios\puntoNet\Consola\Consola\bin\Debug\Consola.exe
+C:\Users\soft_asus\Documents\Repositorios\puntoNet\Consola\Consola\bin\Debug\Consola.pdb
+C:\Users\soft_asus\Documents\Repositorios\puntoNet\Consola\Consola\obj\Debug\Consola.csprojResolveAssemblyReference.cache
+C:\Users\soft_asus\Documents\Repositorios\puntoNet\Consola\Consola\obj\Debug\Consola.exe
+C:\Users\soft_asus\Documents\Repositorios\puntoNet\Consola\Consola\obj\Debug\Consola.pdb
