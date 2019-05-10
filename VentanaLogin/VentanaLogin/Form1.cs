@@ -22,6 +22,10 @@ namespace VentanaLogin
             if (textUser.Text == "AbeQt" && textPassword.Text == "1234")
             {
                 MessageBox.Show("Welcome");
+                this.Hide();
+
+                Ventana2 nuevaVentana = new Ventana2();
+                nuevaVentana.Show();
             }
             else
             {

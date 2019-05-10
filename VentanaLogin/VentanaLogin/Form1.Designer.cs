@@ -115,6 +115,7 @@
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.btnClose);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ventana Login";
             this.ResumeLayout(false);
             this.PerformLayout();
