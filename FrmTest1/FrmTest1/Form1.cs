@@ -10,16 +10,21 @@ using System.Windows.Forms;
 
 namespace FrmTest1
 {
-    public partial class Form1 : Form
+    public partial class Formulario : Form
     {
-        public Form1()
+        public Formulario()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            textBox1.Focus();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
