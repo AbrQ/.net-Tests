@@ -8,12 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using MiLibreria;
+using System.Data;
 
 namespace Facturacion
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
@@ -22,14 +24,30 @@ namespace Facturacion
         {
             try
             {
-                SqlConnection conexion = new SqlConnection("Data Source=.;Initial Catalog=Administracion;Integrated Security=True");
-                conexion.Open();
-                MessageBox.Show("La conexión se realizó con éxito");
+                string CMD = string.Format("Select * FROM Usuario WHERE account = '{0}' AND password = '{1}'", txtBoxAccount.Text.Trim(), txtBoxPassword.Text.Trim());
+                DataSet ds = Utilidades.Ejecutar(CMD);
+
+                string cuenta = ds.Tables[0].Rows[0]["account"].ToString().Trim();
+                string contra = ds.Tables[0].Rows[0]["password"].ToString().Trim();
+
+                if (cuenta == txtBoxAccount.Text.Trim() && contra == txtBoxPassword.Text.Trim())
+                {
+                    MessageBox.Show("Ha iniciado");
+                }
+                else
+                {
+                    MessageBox.Show("Usuario o Password Incorrecto");
+                }
             }
             catch (Exception error)
             {
-                MessageBox.Show("Ha ocurrido un error al conectarse a la base de datos: " +error.Message);
+                MessageBox.Show("Error al intentar conectar a la base de datos: " + error.Message);
             }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
