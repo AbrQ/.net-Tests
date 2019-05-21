@@ -32,11 +32,18 @@ namespace Facturacion
 
                 if (cuenta == txtBoxAccount.Text.Trim() && contra == txtBoxPassword.Text.Trim())
                 {
-                    MessageBox.Show("Ha iniciado");
-                }
-                else
-                {
-                    MessageBox.Show("Usuario o Password Incorrecto");
+                    if (Convert.ToBoolean(ds.Tables[0].Rows[0]["Status_admin"]) == true)
+                    {
+                        VentanaAdmin venAd = new VentanaAdmin();
+                        this.Hide();
+                        venAd.Show();
+                    }
+                    else
+                    {
+                        VentanaUser venUs = new VentanaUser();
+                        this.Hide();
+                        venUs.Show();
+                    }
                 }
             }
             catch (Exception error)
@@ -48,6 +55,11 @@ namespace Facturacion
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Login_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
