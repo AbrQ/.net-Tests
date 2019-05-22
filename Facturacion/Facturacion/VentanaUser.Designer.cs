@@ -28,36 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.pictureUser = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblCod = new System.Windows.Forms.Label();
+            this.lblUs = new System.Windows.Forms.Label();
+            this.lblNom = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureUser)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // btnSalir
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(169, 365);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(255, 166);
-            this.pictureBox1.TabIndex = 24;
-            this.pictureBox1.TabStop = false;
+            this.btnSalir.Location = new System.Drawing.Point(515, 419);
+            this.btnSalir.Size = new System.Drawing.Size(177, 52);
             // 
-            // button5
+            // pictureUser
             // 
-            this.button5.Location = new System.Drawing.Point(515, 428);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(177, 52);
-            this.button5.TabIndex = 23;
-            this.button5.Text = "Salir";
-            this.button5.UseVisualStyleBackColor = true;
+            this.pictureUser.Location = new System.Drawing.Point(169, 365);
+            this.pictureUser.Name = "pictureUser";
+            this.pictureUser.Size = new System.Drawing.Size(255, 166);
+            this.pictureUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureUser.TabIndex = 24;
+            this.pictureUser.TabStop = false;
             // 
             // button4
             // 
@@ -86,32 +82,32 @@
             this.button1.Text = "Contenedor Principal";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // lblCod
             // 
-            this.label6.BackColor = System.Drawing.SystemColors.Control;
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label6.Location = new System.Drawing.Point(249, 313);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(111, 17);
-            this.label6.TabIndex = 18;
+            this.lblCod.BackColor = System.Drawing.SystemColors.Control;
+            this.lblCod.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblCod.Location = new System.Drawing.Point(249, 313);
+            this.lblCod.Name = "lblCod";
+            this.lblCod.Size = new System.Drawing.Size(111, 17);
+            this.lblCod.TabIndex = 18;
             // 
-            // label5
+            // lblUs
             // 
-            this.label5.BackColor = System.Drawing.SystemColors.Control;
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label5.Location = new System.Drawing.Point(249, 208);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(111, 17);
-            this.label5.TabIndex = 17;
+            this.lblUs.BackColor = System.Drawing.SystemColors.Control;
+            this.lblUs.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblUs.Location = new System.Drawing.Point(249, 208);
+            this.lblUs.Name = "lblUs";
+            this.lblUs.Size = new System.Drawing.Size(111, 17);
+            this.lblUs.TabIndex = 17;
             // 
-            // label4
+            // lblNom
             // 
-            this.label4.BackColor = System.Drawing.SystemColors.Control;
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label4.Location = new System.Drawing.Point(249, 120);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(111, 17);
-            this.label4.TabIndex = 16;
+            this.lblNom.BackColor = System.Drawing.SystemColors.Control;
+            this.lblNom.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblNom.Location = new System.Drawing.Point(249, 120);
+            this.lblNom.Name = "lblNom";
+            this.lblNom.Size = new System.Drawing.Size(111, 17);
+            this.lblNom.TabIndex = 16;
             // 
             // label3
             // 
@@ -136,30 +132,42 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(171, 121);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 17);
+            this.label1.Size = new System.Drawing.Size(62, 17);
             this.label1.TabIndex = 13;
-            this.label1.Text = "Admin:";
+            this.label1.Text = "Nombre:";
             // 
             // VentanaUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(858, 599);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.pictureUser);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblCod);
+            this.Controls.Add(this.lblUs);
+            this.Controls.Add(this.lblNom);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "VentanaUser";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VentanaUser";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.VentanaUser_FormClosed);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.VentanaUser_Load);
+            this.Controls.SetChildIndex(this.btnSalir, 0);
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.label2, 0);
+            this.Controls.SetChildIndex(this.label3, 0);
+            this.Controls.SetChildIndex(this.lblNom, 0);
+            this.Controls.SetChildIndex(this.lblUs, 0);
+            this.Controls.SetChildIndex(this.lblCod, 0);
+            this.Controls.SetChildIndex(this.button1, 0);
+            this.Controls.SetChildIndex(this.button3, 0);
+            this.Controls.SetChildIndex(this.button4, 0);
+            this.Controls.SetChildIndex(this.pictureUser, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureUser)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,14 +175,13 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.PictureBox pictureUser;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblCod;
+        private System.Windows.Forms.Label lblUs;
+        private System.Windows.Forms.Label lblNom;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

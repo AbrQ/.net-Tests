@@ -13,12 +13,14 @@ using System.Data;
 
 namespace Facturacion
 {
-    public partial class Login : Form
+    public partial class Login : FormBase
     {
         public Login()
         {
             InitializeComponent();
         }
+
+        public static String Codigo = "";
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
@@ -27,6 +29,7 @@ namespace Facturacion
                 string CMD = string.Format("Select * FROM Usuario WHERE account = '{0}' AND password = '{1}'", txtBoxAccount.Text.Trim(), txtBoxPassword.Text.Trim());
                 DataSet ds = Utilidades.Ejecutar(CMD);
 
+                Codigo = ds.Tables[0].Rows[0]["id_usuario"].ToString().Trim();
                 string cuenta = ds.Tables[0].Rows[0]["account"].ToString().Trim();
                 string contra = ds.Tables[0].Rows[0]["password"].ToString().Trim();
 

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btnIniciar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.lblAccount = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
             this.txtBoxAccount = new System.Windows.Forms.TextBox();
@@ -38,25 +37,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(462, 338);
+            this.btnSalir.Size = new System.Drawing.Size(101, 23);
+            // 
             // btnIniciar
             // 
             this.btnIniciar.Location = new System.Drawing.Point(150, 338);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(101, 23);
-            this.btnIniciar.TabIndex = 0;
+            this.btnIniciar.TabIndex = 2;
             this.btnIniciar.Text = "Iniciar";
             this.btnIniciar.UseVisualStyleBackColor = true;
             this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Location = new System.Drawing.Point(413, 338);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(101, 23);
-            this.btnCancelar.TabIndex = 1;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // lblAccount
             // 
@@ -83,7 +77,7 @@
             this.txtBoxAccount.Location = new System.Drawing.Point(160, 110);
             this.txtBoxAccount.Name = "txtBoxAccount";
             this.txtBoxAccount.Size = new System.Drawing.Size(216, 22);
-            this.txtBoxAccount.TabIndex = 4;
+            this.txtBoxAccount.TabIndex = 0;
             // 
             // txtBoxPassword
             // 
@@ -91,7 +85,7 @@
             this.txtBoxPassword.Name = "txtBoxPassword";
             this.txtBoxPassword.PasswordChar = '*';
             this.txtBoxPassword.Size = new System.Drawing.Size(216, 22);
-            this.txtBoxPassword.TabIndex = 5;
+            this.txtBoxPassword.TabIndex = 1;
             // 
             // pictureBox1
             // 
@@ -105,6 +99,7 @@
             // 
             // Login
             // 
+            this.AcceptButton = this.btnIniciar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(663, 414);
@@ -113,11 +108,18 @@
             this.Controls.Add(this.txtBoxAccount);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblAccount);
-            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnIniciar);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Login_FormClosed);
+            this.Controls.SetChildIndex(this.btnIniciar, 0);
+            this.Controls.SetChildIndex(this.lblAccount, 0);
+            this.Controls.SetChildIndex(this.lblPassword, 0);
+            this.Controls.SetChildIndex(this.txtBoxAccount, 0);
+            this.Controls.SetChildIndex(this.txtBoxPassword, 0);
+            this.Controls.SetChildIndex(this.pictureBox1, 0);
+            this.Controls.SetChildIndex(this.btnSalir, 0);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -127,7 +129,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnIniciar;
-        private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label lblAccount;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.TextBox txtBoxAccount;
