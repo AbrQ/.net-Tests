@@ -34,5 +34,12 @@ namespace Facturacion
             string urlFoto = DS.Tables[0].Rows[0]["Foto"].ToString();
             pictureUser.Image = Image.FromFile(urlFoto);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ContenedorPrincipal conP = new ContenedorPrincipal();
+            this.Hide();
+            conP.Show();
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Facturacion
 {
-    partial class FormBase
+    partial class MantenimientoProducto
     {
         /// <summary>
         /// Required designer variable.
@@ -28,35 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnSalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnSalir
+            // btnConsultar
             // 
-            this.btnSalir.Location = new System.Drawing.Point(33, 58);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
-            this.btnSalir.TabIndex = 0;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
-            // FormBase
+            // btnGuardar
+            // 
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            // 
+            // MantenimientoProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(799, 439);
-            this.Controls.Add(this.btnSalir);
-            this.Name = "FormBase";
-            this.Text = "FormBase";
-            this.Load += new System.EventHandler(this.FormBase_Load);
+            this.ClientSize = new System.Drawing.Size(762, 438);
+            this.Name = "MantenimientoProducto";
+            this.Text = "MantenimientoProducto";
+            this.Load += new System.EventHandler(this.MantenimientoProducto_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        public System.Windows.Forms.Button btnSalir;
-
     }
 }

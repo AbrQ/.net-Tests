@@ -34,5 +34,12 @@ namespace Facturacion
         {
             Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ContenedorPrincipal conP = new ContenedorPrincipal();
+            this.Hide();
+            conP.Show();
+        }
     }
 }
