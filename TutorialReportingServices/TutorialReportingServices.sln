@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "TutorialReportingServices", "TutorialReportingServices\TutorialReportingServices.rptproj", "{FACB53F6-D21B-4FD8-8334-A4ADAA9EB5A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FACB53F6-D21B-4FD8-8334-A4ADAA9EB5A7}.Debug|Default.ActiveCfg = Debug
+		{FACB53F6-D21B-4FD8-8334-A4ADAA9EB5A7}.Debug|Default.Build.0 = Debug
+		{FACB53F6-D21B-4FD8-8334-A4ADAA9EB5A7}.Debug|Default.Deploy.0 = Debug
+		{FACB53F6-D21B-4FD8-8334-A4ADAA9EB5A7}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{FACB53F6-D21B-4FD8-8334-A4ADAA9EB5A7}.DebugLocal|Default.Build.0 = DebugLocal
+		{FACB53F6-D21B-4FD8-8334-A4ADAA9EB5A7}.Release|Default.ActiveCfg = Release
+		{FACB53F6-D21B-4FD8-8334-A4ADAA9EB5A7}.Release|Default.Build.0 = Release
+		{FACB53F6-D21B-4FD8-8334-A4ADAA9EB5A7}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
