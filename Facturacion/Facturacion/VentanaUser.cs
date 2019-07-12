@@ -25,7 +25,7 @@ namespace Facturacion
 
         private void VentanaUser_Load(object sender, EventArgs e)
         {
-            string cmd = "SELECT * FROM Usuario WHERE id_usuario = " + Login.Codigo;
+            string cmd = "SELECT * FROM Usuarios WHERE id_usuario = " + Login.Codigo;
             DataSet DS = Utilidades.Ejecutar(cmd);
             lblNom.Text = DS.Tables[0].Rows[0]["Nom_usu"].ToString();
             lblUs.Text = DS.Tables[0].Rows[0]["account"].ToString();

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using MiLibreria;
-using System.Data;
+
 
 namespace Facturacion
 {
@@ -26,7 +26,7 @@ namespace Facturacion
         {
             try
             {
-                string CMD = string.Format("Select * FROM Usuario WHERE account = '{0}' AND password = '{1}'", txtBoxAccount.Text.Trim(), txtBoxPassword.Text.Trim());
+                string CMD = string.Format("Select * FROM Usuarios WHERE account = '{0}' AND password = '{1}'", txtBoxAccount.Text.Trim(), txtBoxPassword.Text.Trim());
                 DataSet ds = Utilidades.Ejecutar(CMD);
 
                 Codigo = ds.Tables[0].Rows[0]["id_usuario"].ToString().Trim();

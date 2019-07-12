@@ -110,5 +110,12 @@ namespace Facturacion
             mantClient.MdiParent = this;
             mantClient.Show();
         }
+
+        private void productosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MantenimientoProducto mantPro = new MantenimientoProducto();
+            mantPro.MdiParent = this;
+            mantPro.Show();
+        }
     }
 }

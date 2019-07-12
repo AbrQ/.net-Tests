@@ -12,7 +12,7 @@ namespace MiLibreria
     {
         public static DataSet Ejecutar(string cmd)
         {
-            SqlConnection conexion = new SqlConnection("Data Source=.;Initial Catalog=Administracion;Integrated Security=True");
+            SqlConnection conexion = new SqlConnection("Data Source=desktop-3ip2h5v;Initial Catalog=Administration;Integrated Security=True");
             conexion.Open();
 
             DataSet DS = new DataSet();
