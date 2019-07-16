@@ -20,15 +20,23 @@ namespace Facturacion
 
         public override bool Guardar()
         {
-            try
+            if (Utilidades.ValidarFormulario(this, errorProvider1) == false)
             {
-                string cmd = string.Format("EXEC ActualizaClientes '{0}','{1}','{2}'", txtIdCli.Text.Trim(), txtNomCli.Text.Trim(), txtApeCli.Text.Trim());
-                Utilidades.Ejecutar(cmd);
-                MessageBox.Show("Se ha guardado correctamente!");
-                return true;
+                try
+                {
+                    string cmd = string.Format("EXEC ActualizaClientes '{0}','{1}','{2}'", txtIdCli.Text.Trim(), txtNomCli.Text.Trim(), txtApeCli.Text.Trim());
+                    Utilidades.Ejecutar(cmd);
+                    MessageBox.Show("Se ha guardado correctamente!");
+                    return true;
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show("Ha ocurrido un error: " + error.Message);
+                    return false;
+                }
             }
-            catch(Exception error){
-                MessageBox.Show("Ha ocurrido un error: " + error.Message);
+            else
+            {
                 return false;
             }
         }
@@ -71,6 +79,11 @@ namespace Facturacion
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             Nuevo();
+        }
+
+        private void txtIdCli_TextChanged(object sender, EventArgs e)
+        {
+            errorProvider1.Clear();
         }
     }
 }
