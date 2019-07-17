@@ -42,9 +42,22 @@ namespace MiLibreria
                             HayErrores = true;
                         }
                     }
-                    else
+                    if (Obj.SoloNumeros == true)
                     {
-                        ErrorProvider.SetError(Obj, "");
+                        int contador = 0, LetrasEncontradas = 0;
+                        foreach (char letra in Obj.Text.Trim())
+                        {
+                            if (char.IsLetter(Obj.Text.Trim(), contador))
+                            {
+                                LetrasEncontradas++;
+                            }
+                            contador++;
+                        }
+                        if (LetrasEncontradas != 0)
+                        {
+                            HayErrores = true;
+                            ErrorProvider.SetError(Obj, "Solo números");
+                        }
                     }
                 }
             }

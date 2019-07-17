@@ -31,9 +31,9 @@
             this.lblID_Producto = new System.Windows.Forms.Label();
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.lblPrecio = new System.Windows.Forms.Label();
-            this.txtIdPro = new MiLibreria.ErrorTxtBox();
-            this.txtDesc = new MiLibreria.ErrorTxtBox();
             this.txtPrec = new MiLibreria.ErrorTxtBox();
+            this.txtDesc = new MiLibreria.ErrorTxtBox();
+            this.txtIdPro = new MiLibreria.ErrorTxtBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,30 +80,33 @@
             this.lblPrecio.TabIndex = 10;
             this.lblPrecio.Text = "Precio:";
             // 
-            // txtIdPro
+            // txtPrec
             // 
-            this.txtIdPro.Location = new System.Drawing.Point(227, 134);
-            this.txtIdPro.Name = "txtIdPro";
-            this.txtIdPro.Size = new System.Drawing.Size(204, 22);
-            this.txtIdPro.TabIndex = 11;
-            this.txtIdPro.Validar = true;
-            this.txtIdPro.TextChanged += new System.EventHandler(this.txtIdPro_TextChanged);
+            this.txtPrec.Location = new System.Drawing.Point(227, 243);
+            this.txtPrec.Name = "txtPrec";
+            this.txtPrec.Size = new System.Drawing.Size(204, 22);
+            this.txtPrec.SoloNumeros = true;
+            this.txtPrec.TabIndex = 13;
+            this.txtPrec.Validar = true;
             // 
             // txtDesc
             // 
             this.txtDesc.Location = new System.Drawing.Point(227, 187);
             this.txtDesc.Name = "txtDesc";
             this.txtDesc.Size = new System.Drawing.Size(204, 22);
+            this.txtDesc.SoloNumeros = false;
             this.txtDesc.TabIndex = 12;
             this.txtDesc.Validar = true;
             // 
-            // txtPrec
+            // txtIdPro
             // 
-            this.txtPrec.Location = new System.Drawing.Point(227, 243);
-            this.txtPrec.Name = "txtPrec";
-            this.txtPrec.Size = new System.Drawing.Size(204, 22);
-            this.txtPrec.TabIndex = 13;
-            this.txtPrec.Validar = true;
+            this.txtIdPro.Location = new System.Drawing.Point(227, 134);
+            this.txtIdPro.Name = "txtIdPro";
+            this.txtIdPro.Size = new System.Drawing.Size(204, 22);
+            this.txtIdPro.SoloNumeros = true;
+            this.txtIdPro.TabIndex = 11;
+            this.txtIdPro.Validar = true;
+            this.txtIdPro.TextChanged += new System.EventHandler(this.txtIdPro_TextChanged);
             // 
             // MantenimientoProducto
             // 
