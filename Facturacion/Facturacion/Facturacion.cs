@@ -46,6 +46,7 @@ namespace Facturacion
         }
 
         public static int cont_fila = 0;
+        public static double total;
 
         private void btnColocar_Click(object sender, EventArgs e)
         {
@@ -89,6 +90,27 @@ namespace Facturacion
                         cont_fila++;
                     }
                 }
+
+                total = 0;
+                foreach (DataGridViewRow Fila in dataGridView1.Rows)
+                {
+                    total += Convert.ToDouble(Fila.Cells[4].Value);
+                }
+
+                lblTotal.Text = "MXN $" + total.ToString();
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (cont_fila > 0)
+            {
+                total = total - (Convert.ToDouble(dataGridView1.Rows[dataGridView1.CurrentRow.Index].Cells[4].Value));
+                lblTotal.Text = "MXN $ " + total.ToString();
+
+                dataGridView1.Rows.RemoveAt(dataGridView1.CurrentRow.Index);
+
+                cont_fila--;
             }
         }
     }
